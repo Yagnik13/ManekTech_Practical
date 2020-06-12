@@ -1,0 +1,38 @@
+PODS:
+  - FloatRatingView (4.0)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - KRActivityIndicatorView (3.0.5)
+  - KRProgressHUD (3.4.5):
+    - KRActivityIndicatorView (= 3.0.5)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+
+DEPENDENCIES:
+  - FloatRatingView
+  - GoogleMaps
+  - KRProgressHUD
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - FloatRatingView
+    - GoogleMaps
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
+  KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+
+PODFILE CHECKSUM: dfe1ecf1e4b5f62b7a8077812424c2a9c2d4f593
+
+COCOAPODS: 1.9.3

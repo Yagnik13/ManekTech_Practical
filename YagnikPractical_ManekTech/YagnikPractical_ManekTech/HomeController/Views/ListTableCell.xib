@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableCell" rowHeight="116" id="KGk-i7-Jjw" customClass="ListTableCell" customModule="YagnikPractical_ManekTech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mS2-c5-E5D">
+                        <rect key="frame" x="10" y="0.0" width="379" height="106"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="ilF-Uv-nm4">
+                                <rect key="frame" x="10" y="18" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="cUV-eG-b5t"/>
+                                    <constraint firstAttribute="width" secondItem="ilF-Uv-nm4" secondAttribute="height" multiplier="1:1" id="gvX-lr-z4p"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTQ-V2-MqD">
+                                <rect key="frame" x="95" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36o-ut-TEu" customClass="FloatRatingView" customModule="FloatRatingView">
+                                <rect key="frame" x="95" y="53" width="80" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qIb-ZH-z33"/>
+                                    <constraint firstAttribute="width" constant="80" id="wgW-wf-ME7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="Star-empty"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="Star-fill"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-rH-iF2">
+                                <rect key="frame" x="319" y="33" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ybB-zf-AgG"/>
+                                    <constraint firstAttribute="width" secondItem="Zm8-rH-iF2" secondAttribute="height" multiplier="1:1" id="zeR-gL-bo7"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="10" minY="8" maxX="10" maxY="8"/>
+                                <state key="normal" image="map"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zm8-rH-iF2" secondAttribute="trailing" constant="20" id="0tK-0Y-NQH"/>
+                            <constraint firstAttribute="bottom" secondItem="ilF-Uv-nm4" secondAttribute="bottom" constant="18" id="5Yc-uj-Lvn"/>
+                            <constraint firstItem="36o-ut-TEu" firstAttribute="top" secondItem="wTQ-V2-MqD" secondAttribute="bottom" constant="4" id="5jf-GM-b8i"/>
+                            <constraint firstItem="ilF-Uv-nm4" firstAttribute="leading" secondItem="mS2-c5-E5D" secondAttribute="leading" constant="10" id="6LV-ee-VZ8"/>
+                            <constraint firstItem="Zm8-rH-iF2" firstAttribute="centerY" secondItem="ilF-Uv-nm4" secondAttribute="centerY" id="82R-5i-2ng"/>
+                            <constraint firstItem="ilF-Uv-nm4" firstAttribute="centerY" secondItem="mS2-c5-E5D" secondAttribute="centerY" id="8bS-3P-OhY"/>
+                            <constraint firstItem="wTQ-V2-MqD" firstAttribute="leading" secondItem="ilF-Uv-nm4" secondAttribute="trailing" constant="15" id="E8z-zg-2dA"/>
+                            <constraint firstItem="36o-ut-TEu" firstAttribute="leading" secondItem="wTQ-V2-MqD" secondAttribute="leading" id="Lac-Nb-dza"/>
+                            <constraint firstItem="wTQ-V2-MqD" firstAttribute="top" secondItem="ilF-Uv-nm4" secondAttribute="top" constant="10" id="rOq-5n-R8W"/>
+                            <constraint firstItem="ilF-Uv-nm4" firstAttribute="top" secondItem="mS2-c5-E5D" secondAttribute="top" constant="18" id="z0y-Cl-Fsk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mS2-c5-E5D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4Ma-cV-gvs"/>
+                    <constraint firstItem="mS2-c5-E5D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="b80-PE-CGJ"/>
+                    <constraint firstAttribute="trailing" secondItem="mS2-c5-E5D" secondAttribute="trailing" constant="10" id="gCI-uX-Bbf"/>
+                    <constraint firstAttribute="bottom" secondItem="mS2-c5-E5D" secondAttribute="bottom" constant="10" id="kxY-NT-bJE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="mS2-c5-E5D" id="6GS-h3-aO3"/>
+                <outlet property="floatingView" destination="36o-ut-TEu" id="lJi-fA-1T5"/>
+                <outlet property="locationButton" destination="Zm8-rH-iF2" id="V0e-XS-nzo"/>
+                <outlet property="mainImgView" destination="ilF-Uv-nm4" id="8R2-sr-zrG"/>
+                <outlet property="titleLabel" destination="wTQ-V2-MqD" id="JJq-nc-tIA"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="168.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Star-empty" width="44" height="44"/>
+        <image name="Star-fill" width="44" height="44"/>
+        <image name="img" width="1440" height="1000"/>
+        <image name="map" width="52" height="72"/>
+    </resources>
+</document>

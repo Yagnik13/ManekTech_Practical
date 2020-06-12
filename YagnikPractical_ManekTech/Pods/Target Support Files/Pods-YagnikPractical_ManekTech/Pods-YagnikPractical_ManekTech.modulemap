@@ -1,0 +1,6 @@
+framework module Pods_YagnikPractical_ManekTech {
+  umbrella header "Pods-YagnikPractical_ManekTech-umbrella.h"
+
+  export *
+  module * { export * }
+}
